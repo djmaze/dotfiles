@@ -1,0 +1,11 @@
+[user]
+	name = Martin Honermeyer
+	email = martin.honermeyer@zweitag.de
+[color]
+	ui = true
+
+[alias]   
+	lol = log --pretty=oneline --abbrev-commit --graph --decorate
+[core]
+	autocrlf = input
+	editor = vim
