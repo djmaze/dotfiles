@@ -44,7 +44,7 @@ function play_movie_in_xbmc(clip_id) {
 
 $(document).ready(function() {    
   var clip_id = get_clip_id();
-  $('#watch7-video-container').append('<a id="play_video_in_xbmc" href="#">Play in XBMC</a>');
+  $('#watch7-headline').append('<a id="play_video_in_xbmc" href="#">Play in XBMC</a>');
   $('#play_video_in_xbmc').click(function(evt) {
     play_movie_in_xbmc(clip_id);
     evt.preventDefault();
