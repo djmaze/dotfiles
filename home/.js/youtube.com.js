@@ -1,4 +1,4 @@
-var xbmc_address = '192.168.178.25';
+var xbmc_address = 'raspbmc:8080';
 
 function get_clip_id() {
   try {
