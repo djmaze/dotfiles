@@ -1,14 +1,56 @@
 set nowrap
 
-" powerline
-set rtp+=~/.local/lib/python2.7/site-packages/powerline/bindings/vim
-
-let g:vroom_use_zeus=1
-let g:vroom_use_bundle_exec=0
-let g:vroom_spec_command="zeus spec " 
+"airline
+let g:airline_powerline_fonts = 1
 
 " Set colorscheme
-set background=dark
+"set background=dark
 set t_Co=256
-"colorscheme solarized
-colorscheme molokai
+"color solarized
+color molokai
+
+" Keep git in english (in order for fugitive to work)
+let g:fugitive_git_executable = 'LANG=en git'
+
+" Syntax highlighting for other file types
+au BufNewFile,BufRead *.eye setf ruby
+au BufNewFile,BufRead *.pill setf ruby
+
+" Fix vimwiki related errors when editing md files
+function! s:rxSep()
+  return g:vimwiki_rxTableSep
+endfunction
+
+" Vala syntax highlighting
+autocmd BufRead *.vala,*.vapi set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
+au BufRead,BufNewFile *.vala,*.vapi setfiletype vala
+
+" CTRL-Tab is next tab
+noremap <C-Tab> :<C-U>tabnext<CR>
+inoremap <C-Tab> <C-\><C-N>:tabnext<CR>
+cnoremap <C-Tab> <C-C>:tabnext<CR>
+" " CTRL-SHIFT-Tab is previous tab
+noremap <C-S-Tab> :<C-U>tabprevious<CR>
+inoremap <C-S-Tab> <C-\><C-N>:tabprevious<CR>
+cnoremap <C-S-Tab> <C-C>:tabprevious<CR>
+
+" RSpec in Tagbar. Used with a ctags fork (See https://github.com/majutsushi/tagbar/wiki#ruby. For Arch Linux, install the fork from https://aur.archlinux.org/packages/ctags-steveno-git/.)
+let g:tagbar_type_ruby = {
+    \ 'kinds' : [
+        \ 'm:modules',
+        \ 'c:classes',
+        \ 'd:describes',
+        \ 'C:contexts',
+        \ 'f:methods',
+        \ 'F:singleton methods'
+    \ ]
+    \ }
+
+" Map Swirch plugin command to "-"
+nnoremap - :Switch<cr>
+
+" Ignore files for CTRL-P, ctags etc.
+set wildignore+=*.sql,*.log
+
+" Use ag instead of ack for ack.vim
+let g:ackprg = 'ag --nogroup --nocolor --column'
