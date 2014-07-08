@@ -1,0 +1,10 @@
+/* Try to make Github use the full window width available */
+
+.container {
+  width: auto;
+  margin: 0 4%;
+}
+
+.repository-with-sidebar .repository-content {
+  min-width: 85%;
+}
