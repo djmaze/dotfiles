@@ -50,7 +50,7 @@ let g:tagbar_type_ruby = {
 nnoremap - :Switch<cr>
 
 " Ignore files for CTRL-P, ctags etc.
-set wildignore+=*.sql,*.log
+set wildignore+=*.sql,*.log,bower_components,node_modules,tmp,dist,public/assets
 
 " Use ag instead of ack for ack.vim
 let g:ackprg = 'ag --nogroup --nocolor --column'
