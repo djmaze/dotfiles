@@ -61,3 +61,6 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 " Integrate zeal (for documentation lookups)
 "let g:investigate_command_for_ruby = '/usr/bin/zeal --query ^s'
 nnoremap gz :!zeal --query "<cword>"&<CR><CR>
+
+" Enable mouse navigation
+set mouse=a
