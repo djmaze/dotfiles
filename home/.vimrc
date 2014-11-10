@@ -36,6 +36,7 @@ NeoBundle 'heartsentwined/vim-emblem', 'v1.2.0'
 NeoBundle 'greyblake/vim-preview', 'v0.8'
 NeoBundle 'mhinz/vim-signify'
 NeoBundle 'christoomey/vim-tmux-navigator'
+NeoBundle 'tpope/vim-eunuch', '16f64343eb1d37b7f42f7da6460d45262b9d68e5' " v1.1
 " Go
 NeoBundle 'fatih/vim-go'
 NeoBundle 'Blackrush/vim-gocode'
