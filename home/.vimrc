@@ -216,6 +216,9 @@ set mouse=a
 " Keep git in english (in order for fugitive to work)
 let g:fugitive_git_executable = 'LANG=en_US.UTF8 git'
 
+" Split diff views vertically
+set diffopt=filler,vertical
+
 " Set colorscheme
 set t_Co=256
 set background=dark
