@@ -129,6 +129,9 @@ set directory^=~/.vim/_temp//      " where to put swap files.
 "" General Mappings (Normal, Visual, Operator-pending)
 ""
 
+" Set leader to ","
+let mapleader = ','
+
 " Toggle paste mode
 nmap <silent> <F4> :set invpaste<CR>:set paste?<CR>
 imap <silent> <F4> <ESC>:set invpaste<CR>:set paste?<CR>
