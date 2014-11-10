@@ -223,3 +223,6 @@ color molokai
 
 " Use powerline fonts in airline
 let g:airline_powerline_fonts = 1
+
+" Do not show branch in airline
+let g:airline_section_b = '%{airline#util#wrap(airline#extensions#hunks#get_hunks(),0)}'
