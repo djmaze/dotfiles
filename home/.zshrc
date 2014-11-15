@@ -17,7 +17,6 @@ antigen bundles <<EOBUNDLES
   #gpg-agent
   history
   lol
-  last-working-dir
   per-directory-history
   rails
   rake
