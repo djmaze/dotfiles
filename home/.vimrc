@@ -190,6 +190,9 @@ nmap <leader>gl :Glog<CR>
 nmap <leader>gc :Gcommit<CR>
 nmap <leader>gp :Git push<CR>
 
+" Map <Leader><Leader> to ZoomWin
+nmap <leader>zw :ZoomWin<CR>
+
 """
 """ My mappings
 """
