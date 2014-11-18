@@ -37,6 +37,7 @@ NeoBundle 'greyblake/vim-preview', 'v0.8'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'christoomey/vim-tmux-navigator'
 NeoBundle 'tpope/vim-eunuch', '16f64343eb1d37b7f42f7da6460d45262b9d68e5' " v1.1
+NeoBundle 'jgdavey/vim-blockle', 'v0.4'
 " Go
 NeoBundle 'fatih/vim-go'
 NeoBundle 'Blackrush/vim-gocode'
