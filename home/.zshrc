@@ -54,3 +54,7 @@ alias dock-attach=dock_attach
 
 # Fix vim colors in tmux
 alias tmux="tmux -2"
+
+# Disable control flow so CTRL-S works in vim inside tmux
+stty -ixon
+stty stop undef

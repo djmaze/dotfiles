@@ -17,7 +17,7 @@ NeoBundle 'scrooloose/nerdtree', '4.2.0'
 NeoBundle 'SirVer/ultisnips', '3.0'
 NeoBundle 'ervandew/supertab', '2.1'
 NeoBundle 'scrooloose/syntastic', '3.5.0'
-NeoBundle 'majutsushi/tagbar', 'v2.6.1'
+"NeoBundle 'majutsushi/tagbar', 'v2.6.1'
 NeoBundle 'Lokaltog/vim-easymotion', '2.0'
 "NeoBundle 'chrisbra/NrrwRgn'
 NeoBundle 'tpope/vim-fugitive', 'v2.1'
@@ -236,3 +236,15 @@ let g:airline_powerline_fonts = 1
 
 " Do not show branch in airline
 let g:airline_section_b = '%{airline#util#wrap(airline#extensions#hunks#get_hunks(),0)}'
+
+" Save using CTRL-S
+" If the current buffer has never been saved, it will have no name,
+" call the file browser to save it, otherwise just save it.
+command -nargs=0 -bar Update if &modified
+                           \|    if empty(bufname('%'))
+                           \|        browse confirm write
+                           \|    else
+                           \|        confirm write
+                           \|    endif
+                           \|endif
+inoremap <c-s> <Esc>:Update<CR>
