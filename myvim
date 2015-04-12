@@ -1,0 +1,2 @@
+#!/bin/sh
+sudo docker run -it --rm -v $PWD:/home/workspace myvim "$*"
