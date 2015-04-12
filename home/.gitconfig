@@ -1,0 +1,7 @@
+[user]
+	email = maze@strahlungsfrei.de
+	name = Martin Honermeyer
+[push]
+	default = simple
+[color]
+	ui = true
