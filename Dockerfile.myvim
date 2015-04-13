@@ -2,7 +2,7 @@ FROM debian:jessie
 
 RUN apt-get update
 
-RUN apt-get -y install vim-nox git
+RUN apt-get -y install vim-nox git tmux
 
 RUN groupadd -g 1000 work \
  && useradd -s /bin/bash -u 1000 -g 1000 -m work
