@@ -14,5 +14,6 @@ RUN $HOME/.vim/bundle/neobundle.vim/bin/neoinstall
 
 COPY home/.gitconfig /home/work/.gitconfig
 
+ENV EDITOR vim
 WORKDIR /home/work/workspace
 ENTRYPOINT ["vim"]
