@@ -1,0 +1,19 @@
+FROM debian:jessie
+
+RUN apt-get update
+
+RUN apt-get -y install vim-nox git tmux silversearcher-ag
+
+RUN groupadd -g 1000 work \
+ && useradd -s /bin/bash -u 1000 -g 1000 -m work
+USER work
+
+RUN git clone git://github.com/Shougo/neobundle.vim.git /home/work/.vim/bundle/neobundle.vim
+COPY home/.vimrc /home/work/.vimrc
+RUN $HOME/.vim/bundle/neobundle.vim/bin/neoinstall
+
+COPY home/.gitconfig /home/work/.gitconfig
+
+ENV EDITOR vim
+WORKDIR /home/work/workspace
+ENTRYPOINT ["vim"]
