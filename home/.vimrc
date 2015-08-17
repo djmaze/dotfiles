@@ -6,7 +6,7 @@ if has('vim_starting')
 endif
 
 call neobundle#begin(expand('~/.vim/bundle/'))
-NeoBundleFetch 'Shougo/neobundle.vim'
+NeoBundleFetch 'Shougo/neobundle.vim', 'ver3.0'
 " From janus
 NeoBundle 'tpope/vim-sensible', 'v1.1'
 NeoBundle 'rking/ag.vim'
