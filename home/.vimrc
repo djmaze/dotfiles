@@ -52,6 +52,7 @@ NeoBundle 'vim-ruby/vim-ruby', 'vim7.4'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'wavded/vim-stylus', '0.9.1'
 NeoBundle 'saltstack/salt-vim'
+NeoBundle 'digitaltoad/vim-jade'
 " Colors
 NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'tomasr/molokai'
