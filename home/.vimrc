@@ -55,6 +55,7 @@ NeoBundle 'saltstack/salt-vim'
 " Colors
 NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'tomasr/molokai'
+NeoBundle 'flazz/vim-colorschemes'
 call neobundle#end()
 
 " Required:
@@ -228,9 +229,9 @@ let g:fugitive_git_executable = 'LANG=en_US.UTF8 git'
 set diffopt=filler,vertical
 
 " Set colorscheme
-set t_Co=256
-set background=dark
-color molokai
+"set t_Co=256
+"set background=dark
+colorscheme railscasts
 
 " Use powerline fonts in airline
 let g:airline_powerline_fonts = 1
