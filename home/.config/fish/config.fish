@@ -1,1 +1,1 @@
-source /usr/share/fish/config-fisherman.fish
+source ~/.config/fish/functions/*.fish
