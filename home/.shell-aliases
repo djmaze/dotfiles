@@ -1,0 +1,2 @@
+alias dc "sudo -E docker-compose"
+alias dcra "sudo -E docker-compose-run-with-agent"
