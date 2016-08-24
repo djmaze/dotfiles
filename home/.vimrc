@@ -21,7 +21,7 @@ NeoBundle 'scrooloose/syntastic', '3.5.0'
 NeoBundle 'Lokaltog/vim-easymotion', '2.0'
 "NeoBundle 'chrisbra/NrrwRgn'
 NeoBundle 'tpope/vim-fugitive', 'v2.2'
-NeoBundle 'vim-scripts/ZoomWin', '24@1'
+NeoBundle 'szw/vim-maximizer'
 NeoBundle 'jeetsukumaran/vim-buffergator', 'v2.4.0'
 NeoBundle 'terryma/vim-multiple-cursors', 'v2.2'
 NeoBundle 'bronson/vim-trailing-whitespace', '1.0'
@@ -194,8 +194,8 @@ nmap <leader>gl :Glog<CR>
 nmap <leader>gc :Gcommit<CR>
 nmap <leader>gp :Git push<CR>
 
-" Map <Leader><Leader> to ZoomWin
-nmap <leader>zw :ZoomWin<CR>
+" Toggle maximize with <Leader>zw
+nmap <leader>zw :MaximizerToggle<CR>
 
 """
 """ My mappings
