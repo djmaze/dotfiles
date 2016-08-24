@@ -25,6 +25,7 @@ NeoBundle 'szw/vim-maximizer'
 NeoBundle 'jeetsukumaran/vim-buffergator', 'v2.4.0'
 NeoBundle 'terryma/vim-multiple-cursors', 'v2.2'
 NeoBundle 'bronson/vim-trailing-whitespace', '1.0'
+NeoBundle 'tpope/vim-endwise'
 " Additional
 NeoBundle 'ekalinin/Dockerfile.vim'
 NeoBundle 'Keithbsmiley/investigate.vim', '1.1.4'
