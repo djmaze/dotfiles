@@ -219,7 +219,7 @@ set wildignore+=*.sql,*.log,bower_components,node_modules,tmp,dist,public/assets
 
 " Integrate zeal (for documentation lookups)
 "let g:investigate_command_for_ruby = '/usr/bin/zeal --query ^s'
-nnoremap gz :!zeal --query "<cword>"&<CR><CR>
+nnoremap gz :!zeal "<cword>"&<CR><CR>
 
 " Enable mouse navigation
 set mouse=a
