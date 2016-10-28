@@ -48,6 +48,7 @@ NeoBundle 'tpope/vim-git', 'v6.0'
 NeoBundle 'tpope/vim-haml'
 NeoBundle 'tpope/vim-markdown', 'vim7.4'
 NeoBundle 'tpope/vim-rails', 'v5.2'
+NeoBundle 'airblade/vim-localorie'
 "NeoBundle 'skwp/vim-rspec', '0.2.0'
 NeoBundle 'vim-ruby/vim-ruby', 'vim7.4'
 NeoBundle 'slim-template/vim-slim'
@@ -252,3 +253,7 @@ command -nargs=0 -bar Update if &modified
                            \|    endif
                            \|endif
 inoremap <c-s> <Esc>:Update<CR>
+
+" YAML translation mappings for Rails apps
+nnoremap <silent> <leader>lt :call localorie#translate()<CR>
+nnoremap <silent> <leader>le :call localorie#expand_key()<CR>
