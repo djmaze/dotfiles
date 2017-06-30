@@ -40,8 +40,8 @@ NeoBundle 'christoomey/vim-tmux-navigator'
 NeoBundle 'tpope/vim-eunuch', '16f64343eb1d37b7f42f7da6460d45262b9d68e5' " v1.1
 NeoBundle 'jgdavey/vim-blockle', 'v0.4'
 " Go
-NeoBundle 'fatih/vim-go', 'v1.1'
-NeoBundle 'Blackrush/vim-gocode'
+"NeoBundle 'fatih/vim-go', 'v1.1'
+"NeoBundle 'Blackrush/vim-gocode'
 " Langs
 NeoBundle 'kchmck/vim-coffee-script', 'v003'
 NeoBundle 'tpope/vim-git', 'v6.0'
