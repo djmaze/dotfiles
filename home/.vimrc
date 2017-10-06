@@ -124,6 +124,9 @@ set wildignore+=*/tmp/librarian/*,*/.vagrant/*,*/.kitchen/*
 " Ignore rails temporary asset caches
 set wildignore+=*/tmp/cache/assets/*/sprockets/*,*/tmp/cache/assets/*/sass/*,*/public/assets/*
 
+" Ignore compiled python files
+set wildignore+=*.pyc
+
 " Disable temp and backup files
 set wildignore+=*.swp,*~,._*
 
